@@ -1,54 +1,55 @@
-# React + TypeScript + Vite
+# 🌙 Ummah Connect
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Ummah Connect Logo](https://ummah-connect-eight.vercel.app/360_F_269645677_oAjFKkNrezyIeJ6TmawcwEmERIXlQgi5-removebg-preview.png)](https://ummah-connect-eight.vercel.app)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✨ **Ummah Connect** — это современная духовная и образовательная платформа для мусульман всего мира. Мы объединяем, вдохновляем и помогаем расти в вере и знаниях! ✨
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📖 О проекте
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- 🕌 **Общение и братство** — делитесь опытом, задавайте вопросы, находите единомышленников.
+- 📚 **Достоверные знания** — изучайте Коран, хадисы и исламские принципы из надёжных источников.
+- 🌙 **Вера и мотивация** — укрепляйте иман и находите поддержку на пути Ислама.
+- 💬 **Мультиязычность** — проект легко адаптируется под разные языки и культуры.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Быстрый старт
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. Установите зависимости:
+   ```bash
+   pnpm install
+   # или
+   npm install
+   ```
+2. Запустите проект:
+   ```bash
+   pnpm dev
+   # или
+   npm run dev
+   ```
+3. Откройте [http://localhost:5173](http://localhost:5173) в браузере.
+
+---
+
+## 🛠️ Технологии
+
+- ⚛️ React + TypeScript
+- 💨 Vite
+- 🎨 SCSS Modules
+- 🗂️ Структурированный и чистый код
+
+---
+
+## 🔗 Логотип и демо
+
+[![Перейти на сайт](https://ummah-connect-eight.vercel.app/360_F_269645677_oAjFKkNrezyIeJ6TmawcwEmERIXlQgi5-removebg-preview.png)](https://ummah-connect-eight.vercel.app)
+
+---
+
+## 🤝 Присоединяйтесь к Ummah Connect!
+
+Вместе мы — сила! 🌍
