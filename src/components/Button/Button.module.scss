@@ -1,0 +1,98 @@
+.button {
+	display: inline-block;
+	padding: 12px 24px;
+	border-radius: 8px;
+	font-size: 1rem;
+	font-weight: 600;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	text-decoration: none;
+	border: none;
+}
+
+.primary {
+	background-color: #6baf76;
+	color: #fff;
+
+	&:hover {
+		background-color: #5a9d65;
+		transform: scale(1.03);
+	}
+
+	&:active {
+		background-color: #4b8c56;
+		transform: scale(0.98);
+	}
+}
+
+.secondary {
+	background: linear-gradient(90deg, #f2f2f2 60%, #e9ecef 100%);
+	color: #333;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+	border: 1px solid #e0e0e0;
+	position: relative;
+	overflow: hidden;
+
+	&:hover {
+		background: linear-gradient(90deg, #e0e0e0 60%, #f2f2f2 100%);
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+		transform: translateY(-2px) scale(1.04);
+	}
+
+	&:active {
+		background: #d1d5db;
+		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+		transform: scale(0.98);
+	}
+}
+
+.outline {
+	background: transparent;
+	border: 2px solid #6baf76;
+	color: #6baf76;
+	box-shadow: 0 2px 8px rgba(107, 175, 118, 0.08);
+	transition: all 0.3s cubic-bezier(0.4, 2, 0.6, 1);
+
+	&:hover {
+		background: linear-gradient(90deg, #f0fff4 60%, #e6f9ec 100%);
+		color: #4b8c56;
+		box-shadow: 0 4px 16px rgba(107, 175, 118, 0.16);
+		border-color: #4b8c56;
+		transform: translateY(-2px) scale(1.04);
+	}
+
+	&:active {
+		background: #dff2e3;
+		color: #357a4b;
+		border-color: #357a4b;
+		box-shadow: 0 1px 4px rgba(107, 175, 118, 0.08);
+		transform: scale(0.98);
+	}
+}
+
+.danger {
+	background: linear-gradient(90deg, #e74c3c 60%, #ff6f61 100%);
+	color: #fff;
+	box-shadow: 0 2px 8px rgba(231, 76, 60, 0.08);
+	border: none;
+	transition: all 0.3s cubic-bezier(0.4, 2, 0.6, 1);
+
+	&:hover {
+		background: linear-gradient(90deg, #c0392b 60%, #e74c3c 100%);
+		box-shadow: 0 4px 16px rgba(231, 76, 60, 0.16);
+		transform: translateY(-2px) scale(1.04);
+	}
+
+	&:active {
+		background: #b53224;
+		box-shadow: 0 1px 4px rgba(231, 76, 60, 0.08);
+		transform: scale(0.98);
+	}
+}
+
+.disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+	pointer-events: none;
+}

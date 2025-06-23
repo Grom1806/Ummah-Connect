@@ -1,6 +1,7 @@
 import React from 'react'
-import HeroSection from './sections/HeroSection'
 import styles from './Home.module.scss'
+import HeroSection from './sections/HeroSection/HeroSection'
+import AboutSection from './sections/AboutSection/AboutSection'
 
 const Home: React.FC = () => {
 	return (
@@ -8,6 +9,7 @@ const Home: React.FC = () => {
 			<div className={styles.home}>
 				<div className='home-content'>
 					<HeroSection />
+					<AboutSection />
 				</div>
 			</div>
 		</>

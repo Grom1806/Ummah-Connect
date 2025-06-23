@@ -24,6 +24,10 @@
 	font-weight: 500;
 }
 
+.logoGreen {
+	color: #6baf76;
+}
+
 .navList {
 	display: flex;
 	gap: 20px;
@@ -75,3 +79,57 @@
 	}
 }
 
+.languageSelect {
+	background: #fdf7e8;
+	color: #2f6b3a;
+	border: none;
+	border-radius: 8px;
+	padding: 7px 18px 7px 36px;
+	font-size: 1rem;
+	font-weight: 600;
+	margin-right: 18px;
+	outline: none;
+	cursor: pointer;
+	box-shadow: 0 2px 8px rgba(47, 107, 58, 0.08);
+	appearance: none;
+	position: relative;
+	transition: box-shadow 0.2s, background 0.2s,
+		transform 0.3s cubic-bezier(0.4, 2, 0.6, 1);
+	background-image: url('data:image/svg+xml;utf8,<svg fill="%232f6b3a" height="16" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M5.516 7.548a.75.75 0 0 1 1.06 0L10 10.97l3.424-3.423a.75.75 0 1 1 1.06 1.06l-3.954 3.954a.75.75 0 0 1-1.06 0L5.516 8.608a.75.75 0 0 1 0-1.06z"/></svg>'),
+		linear-gradient(90deg, #fdf7e8 100%, #fdf7e8 100%);
+	background-repeat: no-repeat;
+	background-position: 12px center, 0 0;
+	animation: fadeInDown 0.7s 0.2s both;
+}
+.languageSelect:focus {
+	box-shadow: 0 4px 16px rgba(47, 107, 58, 0.16);
+}
+.languageSelect:hover {
+	background-image: url('data:image/svg+xml;utf8,<svg fill="%232f6b3a" height="16" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M5.516 7.548a.75.75 0 0 1 1.06 0L10 10.97l3.424-3.423a.75.75 0 1 1 1.06 1.06l-3.954 3.954a.75.75 0 0 1-1.06 0L5.516 8.608a.75.75 0 0 1 0-1.06z"/></svg>'),
+		linear-gradient(90deg, #e6f9ec 60%, #fdf7e8 100%);
+	background-repeat: no-repeat;
+	background-position: 12px center, 0 0;
+	transform: translateY(-2px) scale(1.06);
+	box-shadow: 0 6px 20px rgba(47, 107, 58, 0.18);
+}
+.languageSelect:active {
+	background-image: url('data:image/svg+xml;utf8,<svg fill="%232f6b3a" height="16" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M5.516 7.548a.75.75 0 0 1 1.06 0L10 10.97l3.424-3.423a.75.75 0 1 1 1.06 1.06l-3.954 3.954a.75.75 0 0 1-1.06 0L5.516 8.608a.75.75 0 0 1 0-1.06z"/></svg>'),
+		linear-gradient(90deg, #d4f3e2 60%, #e6f9ec 100%);
+	background-repeat: no-repeat;
+	background-position: 12px center, 0 0;
+	transform: scale(0.97);
+	box-shadow: 0 2px 8px rgba(47, 107, 58, 0.1);
+}
+.languageSelect option {
+	color: #2f6b3a;
+}
+@keyframes fadeInDown {
+	from {
+		opacity: 0;
+		transform: translateY(-30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

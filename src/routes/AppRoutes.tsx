@@ -1,16 +1,16 @@
-import { Routes, Route } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import Home from '../pages/Home/Home'
 
 const AppRoutes = () => {
 	return (
 		<Routes>
-			<Route path="/" element={<Home />} />
-			<Route path="/about" element={<div>About Page</div>} />
-			<Route path="/quran" element={<div>Quran Page</div>} />
-			<Route path="/hadith" element={<div>Hadith Page</div>} />
-			<Route path="/forum" element={<div>Forum Page</div>} />
-			<Route path="/blog" element={<div>Blog Page</div>} />
-			<Route path="*" element={<div>404 Not Found</div>} />
+			<Route path='/' element={<Home />} />
+			<Route path='/about' element={<div>О нас</div>} />
+			<Route path='/quran' element={<div>Коран</div>} />
+			<Route path='/hadith' element={<div>Хадисы</div>} />
+			<Route path='/forum' element={<div>Форум</div>} />
+			<Route path='/blog' element={<div>Блог</div>} />
+			<Route path='*' element={<div>Страница не найдена</div>} />
 		</Routes>
 	)
 }
