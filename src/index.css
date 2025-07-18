@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Lateef&display=swap');
+@import "tailwindcss";
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+/* === FULL CSS RESET === */
+
+
+body {
+	font-family: 'Montserrat', 'Pacifico', sans-serif;
+	font-weight: 400;
+	background: #fdf7e8;
+	color: #333;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+body[dir='rtl'] {
+	font-family: 'Lateef', 'Montserrat', 'Pacifico', sans-serif;
+	direction: rtl;
+}
